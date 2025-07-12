@@ -3,16 +3,638 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Duci Hua</title>
-    <link rel="stylesheet" href="/src/style.css" />
+    <title>Duci Hua - I do design</title>
+
+    <!-- Open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- GSAP -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/CustomEase.min.js"></script>
   </head>
-  <body>
+  <body class="flex h-screen flex-col items-center justify-between">
+    <!-- Header -->
+    <header class="container py-4">
+      <div
+        x-data="{ openModal: null }"
+        @open-contact-modal.window="openModal = 'contact'"
+        class="mx-auto flex w-max items-center justify-between gap-x-1 rounded-md bg-slate-300/20 p-1"
+      >
+        <!-- Logo -->
+        <div
+          class="flex h-[44px] items-center justify-center rounded-md bg-transparent px-4"
+          style="background: #ededed"
+        >
+          <a href="index.html" class="text-lg font-bold text-white" style="color: #212121">Duci.</a>
+        </div>
+        <!-- Nav -->
+        <nav class="flex items-center justify-between gap-x-1">
+          <button
+            @click="openModal = 'what'"
+            class="h-[44px] rounded-md border border-slate-200 px-4 text-sm font-normal text-slate-500 hover:bg-white"
+          >
+            What I do
+          </button>
 
+          <button
+            @click="openModal = 'resume'"
+            class="h-[44px] rounded-md border border-slate-200 px-4 text-sm font-normal text-slate-500 hover:bg-white"
+          >
+            Résumé
+          </button>
+          <button
+            @click="openModal = 'aboutme'"
+            class="h-[44px] rounded-md border border-slate-200 px-4 text-sm font-normal text-slate-500 hover:bg-white"
+          >
+            About me
+          </button>
+        </nav>
 
+        <!-- Modal -->
+        <div
+          x-show="openModal"
+          x-transition
+          @click.self="openModal = null"
+          class="fixed inset-0 z-50 flex items-center justify-center bg-white/20 backdrop-blur-xl"
+        >
+          <div
+            x-data="{
+              openItem: 0,
+              jobs: [
+                {
+                  title: 'Freelancer',
+                  years: '2022 - now',
+                  desc: 'As a digital product designer, I craft user experiences that balance real user needs with business objectives. I approach problems critically, design with clarity, and always think in systems — from research to developer-ready UI.',
+                  clients: [
+                    { name: 'Apple', link: 'https://www.apple.com' },
+                    { name: 'POM', link: 'https://www.pom.com.sg/login/?return_url=index.php' },
+                    { name: 'Staffsekker', link: 'https://staffscanner.co.uk' }
+                  ]
+                },
+                {
+                  title: 'Freelancer',
+                  years: '2022 - now',
+                  desc: 'As a digital product designer, I craft user experiences that balance real user needs...',
+                  clients: [
+                    { name: 'Apple', link: 'https://www.apple.com' },
+                    { name: 'POM', link: 'https://www.pom.com.sg/login/?return_url=index.php' },
+                    { name: 'Staffsekker', link: 'https://staffscanner.co.uk' }
+                  ]
+                },
+                {
+                  title: 'Freelancer',
+                  years: '2022 - now',
+                  desc: 'As a digital product designer, I craft user experiences that balance real user needs...',
+                  clients: [
+                    { name: 'Apple', link: 'https://www.apple.com' },
+                    { name: 'POM', link: 'https://www.pom.com.sg/login/?return_url=index.php' },
+                    { name: 'Staffsekker', link: 'https://staffscanner.co.uk' }
+                  ]   
+                },
+                {
+                  title: 'Freelancer',
+                  years: '2022 - now',
+                  desc: 'As a digital product designer, I craft user experiences that balance real user needs...',
+                  clients: [
+                    { name: 'Apple', link: 'https://www.apple.com' },
+                    { name: 'POM', link: 'https://www.pom.com.sg/login/?return_url=index.php' },
+                    { name: 'Staffsekker', link: 'https://staffscanner.co.uk' }
+                  ]
+                },
+                
+              ]
+            }"
+            x-show="openModal"
+            x-transition.scale
+            class="h-[80vh] w-[90vw] max-w-[1600px] overflow-y-auto rounded-lg bg-white/85 pb-6 shadow-xl lg:w-[60vw]"
+          >
+            <!-- What I do -->
+            <template x-if="openModal === 'what'">
+              <div x-data="{ activeTab: 'research' }" class="flex flex-col gap-y-3 md:gap-y-6">
+                <!-- Modal Header -->
+                <div
+                  class="flex items-center justify-between border-b border-slate-200 px-6 py-5 md:p-6"
+                >
+                  <h3 class="text-xl font-bold text-black md:text-2xl">What I do</h3>
+                  <button @click="openModal = null" class="rounded-full bg-slate-50 p-1 md:p-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="hidden size-6 md:block"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18 18 6M6 6l12 12"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="size-5 md:hidden"
+                    >
+                      <path
+                        d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <!-- Modal Body -->
+                <!-- Tab Switcher -->
+                <div class="sticky flex items-center gap-x-8 px-6">
+                  <button
+                    @click="activeTab = 'research'"
+                    :class="activeTab === 'research' ? 'text-sm text-slate-900 font-semibold py-2 border-b-2 border-slate-900 ' : 'text-sm text-slate-500 font-normal hover:text-slate-900 py-2 border-b-2 border-transparent'"
+                    class="pb-2 transition"
+                  >
+                    UX Research
+                  </button>
+                  <button
+                    @click="activeTab = 'ux'"
+                    :class="activeTab === 'ux' ? 'text-sm text-slate-900 font-semibold py-2 border-b-2 border-slate-900 ' : 'text-sm text-slate-500 font-normal hover:text-slate-900 py-2 border-b-2 border-transparent'"
+                    class="pb-2 transition"
+                  >
+                    UX Design
+                  </button>
+                  <button
+                    @click="activeTab = 'ui'"
+                    :class="activeTab === 'ui' ? 'text-sm text-slate-900 font-semibold py-2 border-b-2 border-slate-900 ' : 'text-sm text-slate-500 font-normal hover:text-slate-900 py-2 border-b-2 border-transparent'"
+                    class="pb-2 transition"
+                  >
+                    UI Engineer
+                  </button>
+                </div>
 
+                <!-- Tab content -->
+                <div>
+                  <!-- Content of UX Research -->
+                  <div x-show="activeTab === 'research'" class="flex flex-col gap-y-8 px-6">
+                    <div class="flex flex-col gap-y-2">
+                      <p class="text-sm italic text-slate-500">Purpose:</p>
+                      <div class="flex gap-x-2 rounded-lg bg-slate-50 p-4">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          class="size-5 min-w-[20px]"
+                        >
+                          <path
+                            d="M10 1a6 6 0 0 0-3.815 10.631C7.237 12.5 8 13.443 8 14.456v.644a.75.75 0 0 0 .572.729 6.016 6.016 0 0 0 2.856 0A.75.75 0 0 0 12 15.1v-.644c0-1.013.762-1.957 1.815-2.825A6 6 0 0 0 10 1ZM8.863 17.414a.75.75 0 0 0-.226 1.483 9.066 9.066 0 0 0 2.726 0 .75.75 0 0 0-.226-1.483 7.553 7.553 0 0 1-2.274 0Z"
+                          />
+                        </svg>
 
+                        <p class="text-sm text-slate-900">
+                          To uncover real user needs, business requirements, stakeholder needs and
+                          market gaps — so that design decisions are based on evidence, not
+                          assumptions.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-y-2">
+                      <p class="text-sm italic text-slate-500">Tools:</p>
+                      <div class="flex flex-wrap gap-2">
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          User interviews
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          Stakeholder workshops
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          Competitor analysis
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          Market research
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          Survey
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          Journey mapping
+                        </button>
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-y-2">
+                      <p class="text-sm italic text-slate-500">Output:</p>
+                      <div
+                        class="flex gap-x-2 rounded-lg bg-cover bg-center p-4"
+                        style="
+                          background-image: url('https://images.unsplash.com/photo-1635776062043-223faf322554?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                        "
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="size-6 min-w-[24px] text-green-500"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
 
+                        <p class="text-sm text-slate-900">
+                          Clear problem statements, actionable user insights, user personas, design
+                          goals, and a validated direction for UX design.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
+                  <!-- Content of UX Design -->
+                  <div x-show="activeTab === 'ux'" class="flex flex-col gap-y-8 px-6">
+                    <div class="flex flex-col gap-y-2">
+                      <p class="text-sm italic text-slate-500">Purpose:</p>
+                      <div class="flex items-start gap-x-2 rounded-lg bg-slate-50 p-4">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          class="size-5 min-w-[20px]"
+                        >
+                          <path
+                            d="M10 1a6 6 0 0 0-3.815 10.631C7.237 12.5 8 13.443 8 14.456v.644a.75.75 0 0 0 .572.729 6.016 6.016 0 0 0 2.856 0A.75.75 0 0 0 12 15.1v-.644c0-1.013.762-1.957 1.815-2.825A6 6 0 0 0 10 1ZM8.863 17.414a.75.75 0 0 0-.226 1.483 9.066 9.066 0 0 0 2.726 0 .75.75 0 0 0-.226-1.483 7.553 7.553 0 0 1-2.274 0Z"
+                          />
+                        </svg>
+
+                        <p class="text-sm text-slate-900">
+                          To translate research insights into clear, intuitive, and goal-driven user
+                          experiences — structuring information and interactions in a way that makes
+                          sense to users and aligns with business objectives.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-y-2">
+                      <p class="text-sm italic text-slate-500">Tools:</p>
+                      <div class="flex flex-wrap gap-2">
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          User flows
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          Wireframes
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          Sitemaps
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          Low -> high-fidelity mockups
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          Interaction design
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          Usability heuristics
+                        </button>
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-y-2">
+                      <p class="text-sm italic text-slate-500">Output:</p>
+                      <div
+                        class="flex gap-x-2 rounded-lg bg-cover bg-center p-4"
+                        style="
+                          background-image: url('https://images.unsplash.com/photo-1707209856540-22b10a84f2c9?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                        "
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="size-6 min-w-[24px] text-green-500"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+
+                        <p class="text-sm text-slate-900">
+                          Logical and validated UX structures: wireframes, flowcharts, sitemaps,
+                          interaction logic, and prototypes ready for visual and UI design.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Content of UI Engineer -->
+                  <div x-show="activeTab === 'ui'" class="flex flex-col gap-y-8 px-6">
+                    <div class="flex flex-col gap-y-2">
+                      <p class="text-sm italic text-slate-500">Purpose:</p>
+                      <div class="flex items-start gap-x-2 rounded-lg bg-slate-50 p-4">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          class="size-5 min-w-[20px]"
+                        >
+                          <path
+                            d="M10 1a6 6 0 0 0-3.815 10.631C7.237 12.5 8 13.443 8 14.456v.644a.75.75 0 0 0 .572.729 6.016 6.016 0 0 0 2.856 0A.75.75 0 0 0 12 15.1v-.644c0-1.013.762-1.957 1.815-2.825A6 6 0 0 0 10 1ZM8.863 17.414a.75.75 0 0 0-.226 1.483 9.066 9.066 0 0 0 2.726 0 .75.75 0 0 0-.226-1.483 7.553 7.553 0 0 1-2.274 0Z"
+                          />
+                        </svg>
+
+                        <p class="text-sm text-slate-900">
+                          To bring the UX design to life through clean, scalable, and
+                          developer-ready user interfaces — ensuring visual consistency,
+                          accessibility, and handoff efficiency.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-y-2">
+                      <p class="text-sm italic text-slate-500">Tools:</p>
+                      <div class="flex flex-wrap gap-2">
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          Moodboard
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          Design system
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          HTML/CSS
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          TailwindCSS
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          AlpineJS/VanillaJS
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          GSAP
+                        </button>
+                        <button
+                          class="cursor-text rounded-md border border-slate-200 px-4 py-2 text-sm font-normal text-slate-900"
+                        >
+                          Handoff document
+                        </button>
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-y-2">
+                      <p class="text-sm italic text-slate-500">Output:</p>
+                      <div
+                        class="flex gap-x-2 rounded-lg bg-cover bg-right-top p-4"
+                        style="
+                          background-image: url('https://images.unsplash.com/photo-1668853853439-923e013afff1?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                        "
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="size-6 min-w-[24px] text-green-500"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+
+                        <p class="text-sm text-slate-900">
+                          Polished UI designs built with production-ready mindset: component
+                          libraries, responsive layouts, pixel-perfect mockups, and prototypes ready
+                          for development handoff or implementation.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </template>
+
+            <!-- Resume -->
+            <template x-if="openModal === 'resume'">
+              <div x-data="{ openItem: 0 }" class="flex flex-col gap-y-3 md:gap-y-6">
+                <!-- Modal Header -->
+                <div
+                  class="border-slate-20 flex items-center justify-between border-b px-6 py-5 md:p-6"
+                >
+                  <h3 class="text-xl font-bold text-black md:text-2xl">Résumé</h3>
+                  <button @click="openModal = null" class="rounded-full bg-slate-50 p-1 md:p-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="hidden size-6 md:block"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18 18 6M6 6l12 12"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="size-5 md:hidden"
+                    >
+                      <path
+                        d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="flex flex-col px-6">
+                  <!-- Loop 4 items -->
+                  <template x-for="(job, index) in jobs" :key="index">
+                    <div
+                      class="py-4"
+                      :class="{ 'border-b': index < jobs.length - 1, 'border-b-0': index === jobs.length - 1 }"
+                    >
+                      <!-- Header (clickable area) -->
+                      <button
+                        @click="openItem = openItem === index ? null : index"
+                        class="flex w-full items-center justify-between text-left"
+                      >
+                        <div class="flex items-center gap-x-4">
+                          <h2
+                            class="text-lg font-bold uppercase md:text-xl"
+                            x-text="job.title"
+                          ></h2>
+                          <span
+                            class="text-xs font-medium text-slate-500"
+                            x-text="job.years"
+                          ></span>
+                        </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          :class="openItem === index ? 'rotate-180 transform' : ''"
+                          class="size-5 transition-transform duration-300"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                          />
+                        </svg>
+                      </button>
+
+                      <!-- Content -->
+                      <div x-show="openItem === index">
+                        <p
+                          class="mt-4 rounded-md bg-slate-50 p-4 text-sm font-light text-slate-600 ring-2 ring-slate-100"
+                          x-text="job.desc"
+                        ></p>
+
+                        <div class="mt-4 flex items-center gap-x-2">
+                          <p class="text-sm font-medium text-slate-900">Feature clients:</p>
+                          <div class="flex flex-wrap items-center gap-2">
+                            <template x-for="client in job.clients" :key="client.name">
+                              <a
+                                :href="client.link"
+                                target="_blank"
+                                class="rounded-full bg-slate-50 px-3 py-1 text-sm font-light text-slate-900"
+                                x-text="client.name"
+                              ></a>
+                            </template>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </template>
+                </div>
+              </div>
+            </template>
+
+            <!-- About me -->
+            <template x-if="openModal === 'aboutme'">
+              <p class="text-center text-lg font-semibold">About me content here...</p>
+            </template>
+          </div>
+        </div>
+
+        <!-- Button CTA -->
+        <div
+          class="flex h-[44px] items-center justify-center rounded-md bg-green-900 hover:bg-green-800"
+        >
+          <a
+            href="https://www.linkedin.com/in/trung-duc-hua-48993b1a8/"
+            target="_blank"
+            class="px-8 text-sm font-bold text-slate-50"
+          >
+            Let's talk
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Introduction -->
+    <div class="container mt-[2rem] flex flex-col items-center justify-center gap-y-5">
+      <p class="text-customBlack-900 text-sm font-light">
+        Meet: <b>Duci</b> <span>/'duk-key/</span>
+      </p>
+      <h1
+        class="bg-gradient-to-b from-black to-gray-700 bg-clip-text text-center text-7xl font-bold uppercase tracking-wide text-transparent"
+      >
+        Researcher & Designer
+      </h1>
+    </div>
+
+    <!-- Card Stack -->
+    <div class="relative mt-[4rem] h-screen w-[70vw] overflow-hidden rounded-t-3xl bg-gray-50">
+      <!-- Slider -->
+      <div
+        class="slider absolute h-screen w-[100%] overflow-hidden [perspective-origin:50%_100%] [perspective:190px]"
+      >
+        <!-- Card -->
+        <a href="#" class="card">
+          <img
+            src="./src/assets/img/project-1-thumbnail.jpg"
+            alt="This is Apple project"
+            class="object-cover"
+          />
+        </a>
+        <a href="#" class="card">
+          <img
+            src="./src/assets/img/project-2-thumbnail.jpg"
+            alt="This is Apple project"
+            class="object-cover"
+          />
+        </a>
+        <a href="#" class="card">
+          <img
+            src="./src/assets/img/project-3-thumbnail.jpg"
+            alt="This is Apple project"
+            class="object-cover"
+          />
+        </a>
+        <a href="#" class="card">
+          <img
+            src="./src/assets/img/project-4-thumbnail.jpg"
+            alt="This is Apple project"
+            class="object-cover"
+          />
+        </a>
+        <a href="./src/pages/apple.html" class="card">
+          <img
+            src="./src/assets/img/project-5-thumbnail.jpg"
+            alt="This is Apple project"
+            class="object-cover"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- Main JS -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

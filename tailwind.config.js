@@ -1,10 +1,20 @@
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     container: {
       center: true,
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"Inter"', 'sans-serif'],
+      },
+
+      colors: {
+        customBlack: {},
+      },
+
+      backgroundImage: {},
+    },
   },
   plugins: [require('flowbite/plugin')],
 }
