@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./index.html', './src/pages/apple.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     container: {
       center: true,
@@ -9,11 +9,17 @@ module.exports = {
         sans: ['"Inter"', 'sans-serif'],
       },
 
+      letterSpacing: {
+        superTight: '-2rem',
+      },
+
       colors: {
         customBlack: {},
       },
 
-      backgroundImage: {},
+      backgroundImage: {
+        
+      },
     },
   },
   plugins: [require('flowbite/plugin')],

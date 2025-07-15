@@ -13,8 +13,9 @@
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.8",
     "tailwindcss": "^3.3.2",
-    "vite": "^4.2.1",
-    "vite-plugin-html-inline": "^0.1.6"
+    "vite": "^7.0.4",
+    "vite-plugin-html": "^3.2.2",
+    "vite-plugin-html-template": "^1.2.2"
   },
   "dependencies": {
     "alpinejs": "^3.13.1",
