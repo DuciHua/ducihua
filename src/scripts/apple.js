@@ -47,7 +47,7 @@ gsap.to('#hero-animated-text', {
   scrollTrigger: {
     trigger: '#hero-animated-text',
     start: 'top 10%',
-    end: '+=7000',
+    end: '+=6000',
     scrub: true,
   },
   letterSpacing: '-0.5rem',
@@ -58,10 +58,14 @@ gsap.to('#hero-animated-text', {
 // ========== The brief text animating ==========
 const split = new SplitText('#brief-animated-text', { type: 'chars', charsClass: 'char' })
 
-gsap.set(split.chars, { opacity: 0.02 })
+gsap.set(split.chars, {
+  opacity: 0.02,
+  y: 10,
+})
 
 gsap.to(split.chars, {
   opacity: 1,
+  y: 0,
   ease: 'power2.inOut',
   stagger: 0.025,
   scrollTrigger: {
@@ -69,6 +73,30 @@ gsap.to(split.chars, {
     start: 'top 70%',
     end: 'top top',
     scrub: true,
+    markers: true,
   },
 })
 
+// ========== Fade in slide up animation ==========
+gsap.utils.toArray('.fade-vertical-section').forEach((el) => {
+  gsap.fromTo(
+    el,
+    {
+      opacity: 0,
+      y: 100,
+    },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 2,
+      ease: 'sine.out',
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 80%',
+        end: '+=500',
+        toggleActions: 'play none none none',
+        scrub: true,
+      },
+    }
+  )
+})

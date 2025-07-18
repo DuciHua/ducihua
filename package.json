@@ -9,6 +9,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "flowbite": "^2.2.1",
+    "htmlhint": "^1.6.3",
     "postcss": "^8.4.21",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.8",
