@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple x Duci Hua</title>
+  </head>
+  <body class="relative">
+    <!-- Header -->
+    <header
+      class="fixed bottom-4 left-1/2 z-50 w-3/4 -translate-x-1/2 rounded-md bg-black/20 p-1 backdrop-blur-md sm:w-2/3 md:w-1/2 lg:w-1/4"
+    >
+      <div class="flex flex-row gap-x-1">
+        <!-- Back icon -->
+        <div
+          class="flex h-[44px] w-1/2 items-center justify-center rounded-md bg-transparent px-4"
+          style="background-color: #9a9999; opacity: .8;"
+        >
+          <a href="index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Logo -->
+        <div
+          class="flex h-[44px] w-1/2 items-center justify-center rounded-md bg-transparent px-4"
+          style="background-color: #858585; opacity: .8;"
+        >
+          <a href="index.html" class="text-lg font-bold text-white">Duci.</a>
+        </div>
+
+        <!-- Button CTA -->
+        <button
+          class="flex h-[44px] w-full items-center justify-center rounded-md bg-green-900 hover:bg-green-800"
+        >
+          <a
+            href="https://www.linkedin.com/in/trung-duc-hua-48993b1a8/"
+            target="_blank"
+            class="px-4 text-base font-bold text-slate-50 md:px-8"
+          >
+            Let's talk
+          </a>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <section id="scroll-zone" class="relative h-[1000vh]">
+      <div class="sticky top-0 flex h-screen flex-col bg-black py-10 md:py-24">
+        <div class="flex flex-col items-center gap-y-10">
+          <div class="rounded-full bg-blue-600 px-4 py-1 text-sm font-medium text-slate-50">
+            A project with Apple
+          </div>
+          <div class="flex flex-col items-center">
+            <h1
+              class="eading-tight bg-gradient-to-r from-white/15 via-white/90 to-white/30 bg-clip-text text-center text-2xl font-medium tracking-tight text-transparent drop-shadow-[0_0_30px_rgba(255,255,255,0.4)] sm:text-3xl"
+            >
+              From insight to impact
+            </h1>
+          </div>
+        </div>
+        <p
+          id="hero-animated-text"
+          class="absolute left-1/2 top-1/2 hidden w-full -translate-x-1/2 -translate-y-1/2 text-center text-9xl font-extrabold tracking-superTight text-slate-50 drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] xl:block"
+        >
+          Think. Feel. Design.
+        </p>
+        <p
+          id="hero-animated-text"
+          class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 text-center text-[7rem] font-extrabold leading-[8rem] tracking-superTight text-slate-50 drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] sm:text-[10rem] xl:hidden"
+        >
+          Think. <br />
+          Feel. <br />
+          Design.
+        </p>
+        <img
+          src="#"
+          id="hero-iphone"
+          class="absolute left-1/2 top-1/2 w-[150%] -translate-x-1/2 -translate-y-1/2 object-cover lg:w-[70%]"
+          alt="Rotating iPhone hero image"
+        />
+      </div>
+    </section>
+
+    <!-- The Brief -->
+    <div class="w-screen bg-gradient-to-b from-black to-[#171717] pb-2 sm:pb-16 xl:py-44">
+      <div
+        class="relative flex justify-between gap-y-10 overflow-hidden rounded-none bg-[#161616] px-0 py-12 drop-shadow-xl lg:container md:px-24 lg:rounded-3xl lg:py-24"
+      >
+        <div
+          class="items-left mx-auto flex w-[90%] flex-col justify-center gap-y-6 md:w-full md:items-start md:justify-between md:gap-y-12 lg:flex-row"
+        >
+          <h3 class="text-3xl font-medium tracking-normal text-slate-50 lg:text-4xl">The Brief</h3>
+          <p
+            id="brief-animated-text"
+            class="whitespace-normal break-words text-xl font-semibold leading-normal text-slate-50 sm:text-2xl lg:w-2/3 lg:text-4xl lg:leading-normal"
+          >
+            Apple partnered with a leading bank in Vietnam to drive full adoption of its hardware
+            ecosystem. But this wasn’t just about selling devices. It was about delivering value. By
+            embedding tailored software into Apple devices, the goal was to solve real operational
+            pain points — turning each iPhone, iPad, or Mac into something more than just a tool.
+            Into a better way of working.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- What I do -->
+    <div
+      class="flex w-screen flex-col items-center justify-center gap-y-[8vw] bg-gradient-to-b from-[#171717] to-black pb-24"
+    >
+      <!-- Get insights framework -->
+      <div class="container flex flex-col items-center justify-center gap-y-6 sm:gap-y-16">
+        <!-- Title -->
+        <h3
+          class="fade-vertical-section translate-y-8 text-4xl font-medium tracking-normal text-slate-50 opacity-0"
+        >
+          What I Do
+        </h3>
+        <!-- Paragraph block -->
+        <div
+          class="fade-vertical-section flex w-[90%] translate-y-8 flex-col items-center justify-center gap-6 opacity-0 md:w-full md:gap-10 lg:flex-row lg:items-start"
+        >
+          <p
+            class="w-full text-left text-base font-medium leading-tight text-slate-50/50 md:w-2/3 md:text-lg lg:w-1/3"
+          >
+            For this project, I primarily worked as a <span class="text-slate-50">researcher</span>,
+            where I was in charge of defining the
+            <span class="text-slate-50">research strategy</span>, creating interview questionnaires,
+            and handling setup and formatting and facilitating
+            <span class="text-slate-50">design brainstorming</span> sessions.
+          </p>
+          <p
+            class="w-full text-left text-base font-medium leading-tight text-slate-50/50 md:w-2/3 md:text-lg lg:w-1/3"
+          >
+            My main responsibility was to
+            <span class="text-slate-50">build genuine connections</span> with end users — to help
+            them feel comfortable, see us as friends,
+            <span class="text-slate-50">and trust us</span>. This helped me understand their needs
+            more deeply — from emotional drivers to day-to-day pain points and actual behaviors.
+          </p>
+        </div>
+        <!-- Card block -->
+        <div
+          class="fade-vertical-section grid w-[90%] translate-y-8 grid-cols-1 gap-4 opacity-0 md:w-full lg:grid-cols-2"
+        >
+          <!-- Left column -->
+          <div
+            class="row-span-2 flex flex-col items-center justify-between gap-y-6 rounded-2xl bg-black px-4 pb-4 drop-shadow-2xl sm:gap-y-12 sm:px-16 sm:pb-10"
+          >
+            <!-- Image -->
+            <div>
+              <img
+                src="/img/apple-project/interview.jpg"
+                alt="Ice breaker session"
+                class="rounded-b-xl bg-cover"
+              />
+            </div>
+            <div class="h-16 w-16">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 h-full w-full cursor-pointer fill-current text-slate-50/10 transition duration-300 ease-in-out hover:text-slate-50"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col items-center gap-y-2">
+              <h4 class="text-2xl font-semibold text-slate-50">Interview</h4>
+              <p
+                class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50 md:text-lg"
+              >
+                Through open-ended conversations, we explored what
+                <span class="text-slate-50">users do, think, and feel</span>. We looked for moments
+                of friction, workarounds, and needs that weren't being met — not just what was said,
+                but what was implied between the lines.
+              </p>
+            </div>
+          </div>
+          <!-- Right column top -->
+          <div
+            class="flex flex-col items-center gap-y-6 rounded-2xl bg-black px-4 py-4 drop-shadow-2xl sm:gap-y-12 sm:px-16 sm:py-10"
+          >
+            <!-- Icon -->
+            <div class="h-16 w-16">
+              <svg
+                viewBox="0 0 60 61"
+                xmlns="http://www.w3.org/2000/svg"
+                id="fi_1973216"
+                class="h-full w-full cursor-pointer fill-current text-slate-50/10 transition duration-300 ease-in-out hover:text-slate-50"
+              >
+                <g id="037---Ice-Rescue" transform="translate(0 -1)">
+                  <path
+                    id="Shape"
+                    d="m58 36.84c-.06-.36.45.38-9.64-12.73-.4852781-.6286332-1.1466962-1.0985881-1.9-1.35-11.07-3.68-10.93-3.76-12.46-3.76-7.09 0-7.64-.08-9 .24-.31-.67-.58-1.31-.81-1.91l23.29-8.79c1.3040194-.49124019 2.2469095-1.64085091 2.4734927-3.01578493s-.2975638-2.76630616-1.375-3.65-2.5444733-1.12545526-3.8484927-.63421507l-21.73 8.19v-3.43c0-2.76142375-2.2385763-5-5-5s-5 2.23857625-5 5v5c.2007464 3.7420448 1.5211557 7.3374601 3.79 10.32l-11.31 2.85c-.74378213.209277-1.30048527.8282686-1.43 1.59-.05.24.07-1.16-.87 9.24-.62304606.3896876-1.2239712.8136737-1.8 1.27-.20501559.1630486-.33786942.4000311-.37.66 0 .31-.18 2-1 10.8-.09364606 1.1318341.45987227 2.219517 1.43 2.81l16.32 9.93c1.17.71 1.76.58 5.24.58.3007541-.0044177.5835448-.1439767.77-.38.23-.27-.91 1.33 5.23-7.5v5.83c0 1.1045695.8954305 2 2 2h3.72c.75 0 .63 0 6.33-2.16 1.1829365-.4419129 1.9624999-1.5772769 1.95-2.84v-4c4.79 4.12 4.61 4.1 5.12 4.1.26 0-.6.3 9.93-3.64 1.3222467-.4804275 2.1330524-1.8151384 1.95-3.21zm-12.55-33.73c.8956589-.32831667 1.8965309.05073698 2.35.89.2461097.47710776.2777107 1.03636601.0869141 1.53816124-.1907967.50179523-.5859865.89877561-1.0869141 1.09183876l-23.2 8.8c-.3748894-1.2533301-.5767567-2.5520099-.6-3.86zm-30.45 7.89v-5c0-1.65685425 1.3431458-3 3-3s3 1.34314575 3 3c0 1.37 0 5.07 0 5-.0331879 2.0440868.305659 4.077168 1 6v.1c1.2735724 3.5172856 3.0667999 6.8239702 5.32 9.81l-1.19.24c-7.64-4.63-11.13-11.53-11.13-16.15zm8.34 16.71-1.54.29c-.3572656.0714531-.6492728.3280774-.7660254.6732051-.1167526.3451276-.040513.7263255.2 1s.6087598.398248.9660254.3267949l10-2c.5522847-.110457.9104569-.6477153.8-1.2-.110457-.5522847-.6477153-.9104569-1.2-.8l-2.29.46c-1.3041986-1.6950947-2.4775827-3.4869291-3.51-5.36.3304352-.0577736.6646678-.0911969 1-.1 7.54 0 7.59-.09 8.59.26l10.21 3.4c.3760196.1243462.7066559.3575318.95.67l8.58 11.15-5.33 1.69-8.37-3.05c-.7448756-.2578196-1.5717134-.0540854-2.111536.5202857-.5398225.5743712-.6919377 1.4122431-.388464 2.1397143l1.48 3.38c-3.1826961 1.1301684-6.5237686 1.7511354-9.9 1.84l-.63-1.9 1.27-2.56c.2765616-.5439116.1960813-1.2011482-.2035477-1.6622586s-1.0387544-.634188-1.6164523-.4377414l-4.43 1.47c-.5478848.1911058-.9857635.6107395-1.2 1.15l-1.58 3.94h-2.73c-.56 0 .52.37-15.52-6.23l7.21-5.05c.5716159-.4092853.8863599-1.0886415.8289933-1.7893328-.0573665-.7006912-.4784182-1.3198069-1.1089933-1.6306672l-5-2.19 12.14-3.11c1.525049 1.7856541 3.2726114 3.3685424 5.2 4.71zm19.21 12.84-1.55-3.55 5.93 2.16zm-36.75-12.35 4.32 1.89-4.79 3.36zm13 30.51-16.33-9.93c-.31521058-.1957262-.49614096-.5498877-.47-.92l.87-9.42 7.13 2.94v6.62c0 .5522847.4477153 1 1 1s1-.4477153 1-1v-5.8c7.83 3.22 6 2.8 10 2.8v14c-2.22 0-2.57.09-3.2-.29zm5.2-1.88v-12.64l1.76-4.39 3.24-1.09-.74 1.49c-.2407979.4673431-.2805254 1.012693-.11 1.51l.85 2.45v5.52zm16.35.17c-5.83 2.17-5.39 2-5.63 2h-3.72v-14c3.4063713-.0957496 6.7783233-.7094449 10-1.82v12.82c.0275762.4402038-.2365095.8464896-.65 1zm2.65-14.5 5.82-1.85-1.46 12.5-4.36-3.75zm14.35 8.12-8 3 1.57-13.62 5.28-1.68 1.8 11.23c.0610175.4649539-.2092511.9098575-.65 1.07z"
+                  ></path>
+                  <circle id="Oval" cx="18" cy="7" r="1"></circle>
+                  <circle id="Oval" cx="18" cy="11" r="1"></circle>
+                </g>
+              </svg>
+            </div>
+            <div class="flex flex-col items-center gap-y-2">
+              <h4 class="text-2xl font-semibold text-slate-50">Icebreaking</h4>
+              <p
+                class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50 md:text-lg"
+              >
+                We started not with questions, but
+                <span class="text-slate-50">with conversation</span>. The goal was to
+                <span class="text-slate-50">build trust</span> — creating a space where users felt
+                comfortable enough to share openly. This first connection helped surface real
+                stories later on, not just surface-level answers
+              </p>
+            </div>
+          </div>
+          <!-- Right column bottom -->
+          <div
+            class="flex flex-col items-center gap-y-6 rounded-2xl bg-black px-4 py-4 drop-shadow-2xl sm:gap-y-12 sm:px-16 sm:py-10"
+          >
+            <!-- Icon -->
+            <div class="flex items-center">
+              <svg
+                id="fi_10174331"
+                height="64"
+                viewBox="0 0 100 100"
+                width="64"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-current text-slate-50/10 transition duration-300 ease-in-out hover:text-slate-50"
+              >
+                <g>
+                  <path
+                    d="m25.6 77.7c-1.1 0-2-.9-2-2v-51.4c0-1.1.9-2 2-2s2 .9 2 2v51.4c0 1.1-.9 2-2 2zm29.3-2.2c-1.1 0-2-.9-2-2v-47c0-1.1.9-2 2-2s2 .9 2 2v47.1c0 1-.9 1.9-2 1.9zm29.3-3.6c-1.1 0-2-.9-2-2v-39.8c0-1.1.9-2 2-2s2 .9 2 2v39.8c0 1.1-.9 2-2 2zm-68.4-2.3c-1.1 0-2-.9-2-2v-35.2c0-1.1.9-2 2-2s2 .9 2 2v35.3c0 1.1-.9 1.9-2 1.9zm19.5-.4c-1.1 0-2-.9-2-2v-34.4c0-1.1.9-2 2-2s2 .9 2 2v34.4c0 1.1-.9 2-2 2zm29.4-2.9c-1.1 0-2-.9-2-2v-28.6c0-1.1.9-2 2-2s2 .9 2 2v28.6c0 1.1-.9 2-2 2zm29.3-.3c-1.1 0-2-.9-2-2v-28c0-1.1.9-2 2-2s2 .9 2 2v28c0 1.1-.9 2-2 2zm-48.9-4.4c-1.1 0-2-.9-2-2v-19.2c0-1.1.9-2 2-2s2 .9 2 2v19.2c0 1.1-.9 2-2 2zm-39.1 0c-1.1 0-2-.9-2-2v-19.2c0-1.1.9-2 2-2s2 .9 2 2v19.2c0 1.1-.9 2-2 2zm68.4-3.5c-1.1 0-2-.9-2-2v-12.2c0-1.1.9-2 2-2s2 .9 2 2v12.3c0 1-.9 1.9-2 1.9z"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                id="fi_10174331"
+                height="64"
+                viewBox="0 0 100 100"
+                width="64"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-current text-slate-50/70 transition duration-300 ease-in-out hover:text-slate-50"
+              >
+                <g>
+                  <path
+                    d="m25.6 77.7c-1.1 0-2-.9-2-2v-51.4c0-1.1.9-2 2-2s2 .9 2 2v51.4c0 1.1-.9 2-2 2zm29.3-2.2c-1.1 0-2-.9-2-2v-47c0-1.1.9-2 2-2s2 .9 2 2v47.1c0 1-.9 1.9-2 1.9zm29.3-3.6c-1.1 0-2-.9-2-2v-39.8c0-1.1.9-2 2-2s2 .9 2 2v39.8c0 1.1-.9 2-2 2zm-68.4-2.3c-1.1 0-2-.9-2-2v-35.2c0-1.1.9-2 2-2s2 .9 2 2v35.3c0 1.1-.9 1.9-2 1.9zm19.5-.4c-1.1 0-2-.9-2-2v-34.4c0-1.1.9-2 2-2s2 .9 2 2v34.4c0 1.1-.9 2-2 2zm29.4-2.9c-1.1 0-2-.9-2-2v-28.6c0-1.1.9-2 2-2s2 .9 2 2v28.6c0 1.1-.9 2-2 2zm29.3-.3c-1.1 0-2-.9-2-2v-28c0-1.1.9-2 2-2s2 .9 2 2v28c0 1.1-.9 2-2 2zm-48.9-4.4c-1.1 0-2-.9-2-2v-19.2c0-1.1.9-2 2-2s2 .9 2 2v19.2c0 1.1-.9 2-2 2zm-39.1 0c-1.1 0-2-.9-2-2v-19.2c0-1.1.9-2 2-2s2 .9 2 2v19.2c0 1.1-.9 2-2 2zm68.4-3.5c-1.1 0-2-.9-2-2v-12.2c0-1.1.9-2 2-2s2 .9 2 2v12.3c0 1-.9 1.9-2 1.9z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="flex flex-col items-center gap-y-2">
+              <h4 class="text-2xl font-semibold text-slate-50">Observation</h4>
+              <p
+                class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50 md:text-lg"
+              >
+                Watching users in context revealed what words couldn’t. Their
+                <span class="text-slate-50"> routines, tools, and unconscious habits </span> brought
+                <span class="text-slate-50">hidden pain points to light</span> — the ones they lived
+                with every day but rarely talked about.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paragraph transition -->
+      <div class="container w-[90%] gap-y-2">
+        <p
+          class="fade-vertical-section translate-y-8 text-4xl font-medium tracking-normal text-slate-50 opacity-0"
+        >
+          Our motto
+        </p>
+        <h3
+          class="fade-vertical-section my-10 translate-y-8 text-5xl font-bold tracking-tight text-slate-50 opacity-0 drop-shadow-[0_0_10px_rgba(255,255,255,0.4)] sm:text-7xl md:text-8xl"
+        >
+          More insight <br />
+          Less risk
+        </h3>
+        <p
+          id="brief-animated-text"
+          class="fade-vertical-section translate-y-8 text-2xl font-medium tracking-normal text-slate-50 opacity-0 sm:text-4xl lg:w-[60%]"
+        >
+          The more insight we uncover at the start — from user needs to business context — the fewer
+          assumptions we have to make along the way.
+        </p>
+      </div>
+
+      <!-- Use insights framework -->
+      <div class="grid w-[90%] grid-cols-1 grid-rows-[auto_auto_auto] md:w-full">
+        <!-- Grid row 1 -->
+        <div class="border-t border-gray-400/20">
+          <div class="container grid grid-cols-1 grid-rows-1 lg:grid-cols-2">
+            <div
+              class="flex items-center justify-center border-x border-b border-gray-400/20 bg-gradient-to-tr from-[#000000] via-[#080808] to-[#1a1a1a] py-[10vw] lg:border-b-0 lg:border-r-0"
+            >
+              <img src="/img/apple-project/thumbnail-1.png" alt="" class="h-full w-full" />
+            </div>
+            <div
+              class="flex items-center justify-center border-x border-gray-400/20 px-4 py-[5vw] sm:px-12 xl:px-36 xl:py-[15vw]"
+            >
+              <p
+                class="text-left text-lg font-light leading-6 text-slate-50/50 sm:text-2xl sm:leading-8"
+              >
+                <span class="text-slate-50">Day in a life of (DILO):</span> To uncover deeper user
+                needs beyond interviews, we used the DILO method
+                <span class="font-medium text-blue-700">to map out a typical day</span> of our
+                target users. By documenting their routines, tools, environments, and interactions
+                from morning to evening, we gained a
+                <span class="font-medium text-blue-700"
+                  >clearer understanding of their pain points</span
+                >
+                in real context.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid row 2 -->
+        <div class="border-t border-gray-400/20">
+          <div
+            class="container grid grid-cols-1 grid-rows-1 border-x border-gray-400/20 px-4 py-[5vw] sm:px-12 xl:px-36 xl:py-[15vw]"
+          >
+            <p
+              class="relative z-10 text-left text-lg font-light leading-6 text-slate-50/50 sm:text-2xl sm:leading-8 lg:text-center"
+            >
+              <span class="text-slate-50">Synthesize:</span>
+              We gathered hours of interviews and observations, but insight only emerged when
+              everything was laid out, examined, and connected.
+              <span class="font-medium text-blue-700">Patterns started to form</span>
+              — recurring blockers, shared workarounds, and silent frustrations users never said out
+              loud. Through clustering and mapping, we
+              <span class="font-medium text-blue-700">turned noise into clarity</span>, surfacing
+              the core problems worth solving and setting the stage for focused,
+              <span class="font-medium text-blue-700">user-driven design</span>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Grid row 3 -->
+        <div class="border-y border-gray-400/20">
+          <div class="container grid grid-cols-1 grid-rows-1 lg:grid-cols-2">
+            <div
+              class="flex items-center justify-center border-x border-b border-gray-400/20 py-[8vw] lg:border-b-0 lg:border-r-0"
+            >
+              <video
+                src="/videos/apple-project/macbook-1.webm"
+                autoplay
+                muted
+                playsinline
+                class="object-contain"
+              ></video>
+            </div>
+            <div
+              class="flex items-center justify-center border-x border-gray-400/20 px-4 py-[5vw] sm:px-12 xl:px-36 xl:py-[15vw]"
+            >
+              <p
+                class="text-left text-lg font-light leading-6 text-slate-50/50 sm:text-2xl sm:leading-8"
+              >
+                <span class="text-slate-50">Dream:</span> With the pain points laid bare,
+                <span class="font-medium text-blue-700"> we imagined </span> a better day — one
+                without blockers, delays, or frustrating workarounds.
+                <span class="font-medium text-blue-700">We re-wrote</span> the user’s journey,
+                turning friction into flow. This wasn’t just solving problems. It was
+                <span class="font-medium text-blue-700">designing a future </span> that felt
+                effortless, intuitive, and real.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why I did this -->
+    <section x-data="{ activeTab : 'tab1' }" class="w-screen bg-[#171717] pt-12 sm:pt-24">
+      <div class="container flex flex-col items-center justify-between gap-y-8 md:gap-y-16">
+        <!-- Heading -->
+        <div class="flex w-[90%] flex-col items-center gap-y-4 lg:w-full">
+          <h3
+            class="text-center text-3xl font-medium leading-tight tracking-normal text-slate-50 sm:text-4xl"
+          >
+            Why I chose these frameworks
+          </h3>
+          <p
+            class="w-[90%] text-center text-sm font-medium leading-tight text-slate-50/50 sm:text-base md:text-lg lg:w-1/2"
+          >
+            To uncover user pain points with both depth and clarity, we chose a blend of qualitative
+            attitudinal and behavioral research methods. Each approach served a distinct purpose in
+            helping us move from assumption to insight.
+          </p>
+        </div>
+
+        <!-- Tab button -->
+        <div
+          class="flex w-[90%] items-center justify-between gap-x-4 overflow-auto sm:gap-x-8 lg:w-auto"
+        >
+          <template x-for="tab in ['tab1', 'tab2', 'tab3', 'tab4']" :key="tab">
+            <button
+              @click="activeTab = tab"
+              :class="activeTab === tab
+              ? 'text-sm md:text-base text-slate-50 font-medium border-b-[0.8px] border-slate-50 transition py-2 px-2 md:px-6 lg:px-10'
+              : 'text-sm md:text-base text-slate-50/30 font-medium border-b-[0.8px] border-slate-50/30 hover:text-white hover:border-slate-50 transition py-2 px-0 md:px-6 lg:px-10'"
+              x-text="{
+                tab1: 'Interview',
+                tab2: 'Observation',
+                tab3: 'DILO',
+                tab4: 'Golden Thread'
+              }[tab]"
+            ></button>
+          </template>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="h-[155vh] w-[90%] sm:h-[165vh] md:h-[195vh] lg:h-[100vh] lg:w-full">
+          <!-- Tab 1 - Interview -->
+          <div x-show="activeTab === 'tab1'" x-cloak class="flex flex-col gap-y-6">
+            <h4 class="text-center text-xs font-medium tracking-wide text-slate-50 sm:text-lg">
+              With the right participants selected, we conducted in-depth interviews to surface both
+              explicit needs and unspoken tensions.
+            </h4>
+            <!-- Card block -->
+            <div class="grid grid-cols-1 gap-4 md:gap-8 lg:grid-cols-2">
+              <!-- Left column -->
+              <div
+                class="row-span-2 flex flex-col items-center justify-between gap-y-6 rounded-2xl bg-black px-4 py-6 drop-shadow-2xl md:gap-y-12 md:px-16 md:py-10"
+              >
+                <!-- Image -->
+                <div class="flex items-center justify-center">
+                  <img
+                    src="/img/apple-project/why-interview.png"
+                    alt="Interview session"
+                    class="w-[50%] bg-cover"
+                  />
+                </div>
+                <!-- Description -->
+                <p class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50">
+                  To explore users' thoughts, expectations, and frustrations in their own words, we
+                  conducted in-depth interviews. This qualitative method allowed us to
+                  <span class="text-slate-50"> uncover explicit needs and latent concerns </span>
+                  that would be difficult to observe directly.
+                </p>
+              </div>
+              <!-- Right column top -->
+              <div
+                class="flex flex-col items-center justify-center gap-y-6 rounded-2xl bg-black px-4 py-6 drop-shadow-2xl md:gap-y-8 md:px-16 md:py-10"
+              >
+                <!-- Icon -->
+                <div class="h-8 w-8 md:h-12 md:w-12 lg:h-16 lg:w-16">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6 h-full w-full cursor-pointer fill-current text-slate-50/10 transition duration-300 ease-in-out hover:text-slate-50"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.22 3.22a.75.75 0 0 1 1.06 0l3.97 3.97V4.5a.75.75 0 0 1 1.5 0V9a.75.75 0 0 1-.75.75H4.5a.75.75 0 0 1 0-1.5h2.69L3.22 4.28a.75.75 0 0 1 0-1.06Zm17.56 0a.75.75 0 0 1 0 1.06l-3.97 3.97h2.69a.75.75 0 0 1 0 1.5H15a.75.75 0 0 1-.75-.75V4.5a.75.75 0 0 1 1.5 0v2.69l3.97-3.97a.75.75 0 0 1 1.06 0ZM3.75 15a.75.75 0 0 1 .75-.75H9a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-2.69l-3.97 3.97a.75.75 0 0 1-1.06-1.06l3.97-3.97H4.5a.75.75 0 0 1-.75-.75Zm10.5 0a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-2.69l3.97 3.97a.75.75 0 1 1-1.06 1.06l-3.97-3.97v2.69a.75.75 0 0 1-1.5 0V15Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <p class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50">
+                  We mapped each question to a research objective. The interview flow was crafted to
+                  balance open-ended prompts with targeted follow-ups, enabling us to
+                  <span class="text-slate-50"> extract patterns </span> in user motivation, mental
+                  models, and friction points in existing workflows.
+                </p>
+              </div>
+              <!-- Right column bottom -->
+              <div
+                class="flex flex-col items-center justify-center gap-y-6 rounded-2xl bg-black px-4 py-6 drop-shadow-2xl md:gap-y-8 md:px-16 md:py-10"
+              >
+                <!-- Icon -->
+                <div class="h-8 w-8 md:h-12 md:w-12 lg:h-16 lg:w-16">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6 h-full w-full cursor-pointer fill-current text-slate-50/10 transition duration-300 ease-in-out hover:text-slate-50"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.25 13.5a8.25 8.25 0 0 1 8.25-8.25.75.75 0 0 1 .75.75v6.75H18a.75.75 0 0 1 .75.75 8.25 8.25 0 0 1-16.5 0Z"
+                      clip-rule="evenodd"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.75 3a.75.75 0 0 1 .75-.75 8.25 8.25 0 0 1 8.25 8.25.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75V3Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <p class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50">
+                  User interviews helped us identify misalignments between
+                  <span class="text-slate-50">
+                    what users expected and what the product delivered </span
+                  >. It surfaced emotional pain points—such as confusion, distrust, or
+                  hesitation—that guided our prioritization of design fixes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2 - Observation -->
+          <div x-show="activeTab === 'tab2'" x-cloak class="flex flex-col gap-y-6">
+            <h4 class="text-center text-xs font-medium tracking-wide text-slate-50 sm:text-lg">
+              By observing users in context, we captured hidden habits, real-time bottlenecks, and
+              mismatches between policy and practice.
+            </h4>
+            <!-- Card block -->
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+              <!-- Left column -->
+              <div
+                class="row-span-2 flex flex-col items-center justify-between gap-y-12 rounded-2xl bg-black px-16 py-10 drop-shadow-2xl"
+              >
+                <!-- Image -->
+                <div class="flex items-center justify-center">
+                  <img
+                    src="/img/apple-project/why-observation.png"
+                    alt="Interview session"
+                    class="w-[50%] bg-cover"
+                  />
+                </div>
+                <!-- Description -->
+                <p class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50">
+                  People don’t always articulate their problems — they show them. Observation helped
+                  us <span class="text-slate-50">capture real behavior in real contexts</span>,
+                  revealing usability issues and inefficiencies users had normalized over time.
+                </p>
+              </div>
+              <!-- Right column top -->
+              <div
+                class="flex flex-col items-center justify-center gap-y-8 rounded-2xl bg-black px-16 py-10 drop-shadow-2xl"
+              >
+                <!-- Icon -->
+                <div class="h-8 w-8 md:h-12 md:w-12 lg:h-16 lg:w-16">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6 h-full w-full cursor-pointer fill-current text-slate-50/10 transition duration-300 ease-in-out hover:text-slate-50"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.502 6h7.128A3.375 3.375 0 0 1 18 9.375v9.375a3 3 0 0 0 3-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 0 0-.673-.05A3 3 0 0 0 15 1.5h-1.5a3 3 0 0 0-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6ZM13.5 3A1.5 1.5 0 0 0 12 4.5h4.5A1.5 1.5 0 0 0 15 3h-1.5Z"
+                      clip-rule="evenodd"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V9.375Zm9.586 4.594a.75.75 0 0 0-1.172-.938l-2.476 3.096-.908-.907a.75.75 0 0 0-1.06 1.06l1.5 1.5a.75.75 0 0 0 1.116-.062l3-3.75Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <p class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50">
+                  We passively observed users performing key tasks in their natural environments.
+                  Instead of asking, we watched:
+                  <span class="text-slate-50">
+                    where they hesitated, what they skipped, and how they adapted
+                  </span>
+                  when the system failed them.
+                </p>
+              </div>
+              <!-- Right column bottom -->
+              <div
+                class="flex flex-col items-center justify-center gap-y-8 rounded-2xl bg-black px-16 py-10 drop-shadow-2xl"
+              >
+                <!-- Icon -->
+                <div class="h-8 w-8 md:h-12 md:w-12 lg:h-16 lg:w-16">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6 h-full w-full cursor-pointer fill-current text-slate-50/10 transition duration-300 ease-in-out hover:text-slate-50"
+                  >
+                    <path
+                      d="M6 3a3 3 0 0 0-3 3v1.5a.75.75 0 0 0 1.5 0V6A1.5 1.5 0 0 1 6 4.5h1.5a.75.75 0 0 0 0-1.5H6ZM16.5 3a.75.75 0 0 0 0 1.5H18A1.5 1.5 0 0 1 19.5 6v1.5a.75.75 0 0 0 1.5 0V6a3 3 0 0 0-3-3h-1.5ZM12 8.25a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5ZM4.5 16.5a.75.75 0 0 0-1.5 0V18a3 3 0 0 0 3 3h1.5a.75.75 0 0 0 0-1.5H6A1.5 1.5 0 0 1 4.5 18v-1.5ZM21 16.5a.75.75 0 0 0-1.5 0V18a1.5 1.5 0 0 1-1.5 1.5h-1.5a.75.75 0 0 0 0 1.5H18a3 3 0 0 0 3-3v-1.5Z"
+                    />
+                  </svg>
+                </div>
+                <p class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50">
+                  Subtle behaviors—like taking screenshots as reminders or retyping info they had
+                  copied—uncovered friction that users couldn’t verbalize. These moments helped us
+                  <span class="text-slate-50">simplify UI flows and reduce cognitive load.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3 - DILO -->
+          <div x-show="activeTab === 'tab3'" x-cloak class="flex flex-col gap-y-6">
+            <h4 class="text-center text-xs font-medium tracking-wide text-slate-50 sm:text-lg">
+              Mapping a day in the life helped us connect fragmented pain points into a complete
+              journey — revealing root causes behind friction.
+            </h4>
+            <!-- Card block -->
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+              <!-- Left column -->
+              <div
+                class="row-span-2 flex flex-col items-center justify-between gap-y-12 rounded-2xl bg-black px-16 py-10 drop-shadow-2xl"
+              >
+                <!-- Image -->
+                <div class="flex items-center justify-center">
+                  <img
+                    src="/img/apple-project/why-dilo.png"
+                    alt="Interview session"
+                    class="w-[50%] bg-cover"
+                  />
+                </div>
+                <!-- Description -->
+                <p class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50">
+                  To understand how our product fits into users' broader routines, we needed to zoom
+                  out. DILO provided a<span class="text-slate-50">
+                    contextual view of their daily touchpoints</span
+                  >, helping us identify <span class="text-slate-50">when, where, and why</span> our
+                  product gets used—or ignored.
+                </p>
+              </div>
+              <!-- Right column top -->
+              <div
+                class="flex flex-col items-center justify-center gap-y-8 rounded-2xl bg-black px-16 py-10 drop-shadow-2xl"
+              >
+                <!-- Icon -->
+                <div class="h-8 w-8 md:h-12 md:w-12 lg:h-16 lg:w-16">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6 h-full w-full cursor-pointer fill-current text-slate-50/10 transition duration-300 ease-in-out hover:text-slate-50"
+                  >
+                    <path d="M19.5 6h-15v9h15V6Z" />
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v11.25C1.5 17.16 2.34 18 3.375 18H9.75v1.5H6A.75.75 0 0 0 6 21h12a.75.75 0 0 0 0-1.5h-3.75V18h6.375c1.035 0 1.875-.84 1.875-1.875V4.875C22.5 3.839 21.66 3 20.625 3H3.375Zm0 13.5h17.25a.375.375 0 0 0 .375-.375V4.875a.375.375 0 0 0-.375-.375H3.375A.375.375 0 0 0 3 4.875v11.25c0 .207.168.375.375.375Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <p class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50">
+                  We shadowed users through an entire workday,
+                  <span class="text-slate-50">
+                    documenting their tasks, priorities, interruptions, and tool
+                  </span>
+                  switching behavior. This gave us insight into environmental and emotional factors
+                  that impact usage.
+                </p>
+              </div>
+              <!-- Right column bottom -->
+              <div
+                class="flex flex-col items-center justify-center gap-y-8 rounded-2xl bg-black px-16 py-10 drop-shadow-2xl"
+              >
+                <!-- Icon -->
+                <div class="h-8 w-8 md:h-12 md:w-12 lg:h-16 lg:w-16">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6 h-full w-full cursor-pointer fill-current text-slate-50/10 transition duration-300 ease-in-out hover:text-slate-50"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <p class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50">
+                  We discovered that usage doesn’t depend only on UX—it’s shaped by
+                  <span class="text-slate-50"> schedules, pressure, and team dynamics. </span> This
+                  insight led to features that better fit into users’ real-life workflows, not just
+                  ideal scenarios.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 4 - Golden Thread -->
+          <div x-show="activeTab === 'tab4'" x-cloak class="flex flex-col gap-y-6">
+            <h4 class="text-center text-xs font-medium tracking-wide text-slate-50 sm:text-lg">
+              Synthesizing insights across interviews, observations, and user journeys, we formed a
+              clear vision of what to build — and why.
+            </h4>
+            <!-- Card block -->
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+              <!-- Left column -->
+              <div
+                class="row-span-2 flex flex-col items-center justify-between gap-y-12 rounded-2xl bg-black px-16 py-10 drop-shadow-2xl"
+              >
+                <!-- Image -->
+                <div class="flex items-center justify-center">
+                  <img
+                    src="/img/apple-project/why-golden-thread.png"
+                    alt="Interview session"
+                    class="w-[50%] bg-cover"
+                  />
+                </div>
+                <!-- Description -->
+                <p class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50">
+                  While other methods gave us snapshots, the Golden Thread helped us
+                  <span class="text-slate-50"> connect dots across users and time. </span> It
+                  ensured that insights were not isolated, but part of a coherent, evolving
+                  narrative.
+                </p>
+              </div>
+              <!-- Right column top -->
+              <div
+                class="flex flex-col items-center justify-center gap-y-8 rounded-2xl bg-black px-16 py-10 drop-shadow-2xl"
+              >
+                <!-- Icon -->
+                <div class="h-8 w-8 md:h-12 md:w-12 lg:h-16 lg:w-16">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6 h-full w-full cursor-pointer fill-current text-slate-50/10 transition duration-300 ease-in-out hover:text-slate-50"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.5 3.798v5.02a3 3 0 0 1-.879 2.121l-2.377 2.377a9.845 9.845 0 0 1 5.091 1.013 8.315 8.315 0 0 0 5.713.636l.285-.071-3.954-3.955a3 3 0 0 1-.879-2.121v-5.02a23.614 23.614 0 0 0-3 0Zm4.5.138a.75.75 0 0 0 .093-1.495A24.837 24.837 0 0 0 12 2.25a25.048 25.048 0 0 0-3.093.191A.75.75 0 0 0 9 3.936v4.882a1.5 1.5 0 0 1-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0 1 15 8.818V3.936Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <p class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50">
+                  We synthesized findings from interviews, observations, and DILOs into storylines
+                  that traced a user’s
+                  <span class="text-slate-50">journey from problem to resolution</span>. This
+                  framework helped align the team around
+                  <span class="text-slate-50">key insight themes and strategic opportunities</span>.
+                </p>
+              </div>
+              <!-- Right column bottom -->
+              <div
+                class="flex flex-col items-center justify-center gap-y-8 rounded-2xl bg-black px-16 py-10 drop-shadow-2xl"
+              >
+                <!-- Icon -->
+                <div class="h-8 w-8 md:h-12 md:w-12 lg:h-16 lg:w-16">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-6 h-full w-full cursor-pointer fill-current text-slate-50/10 transition duration-300 ease-in-out hover:text-slate-50"
+                  >
+                    <path
+                      d="M18 1.5c2.9 0 5.25 2.35 5.25 5.25v3.75a.75.75 0 0 1-1.5 0V6.75a3.75 3.75 0 1 0-7.5 0v3a3 3 0 0 1 3 3v6.75a3 3 0 0 1-3 3H3.75a3 3 0 0 1-3-3v-6.75a3 3 0 0 1 3-3h9v-3c0-2.9 2.35-5.25 5.25-5.25Z"
+                    />
+                  </svg>
+                </div>
+                <p class="w-[90%] text-center text-sm font-medium leading-relaxed text-slate-50/50">
+                  The Golden Thread revealed
+                  <span class="text-slate-50">consistent pain patterns</span> across personas and
+                  touchpoints. It gave us confidence that the problems we chose to solve were not
+                  anecdotal—but rooted in shared experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="mx-auto mt-[5rem] h-auto w-screen sm:w-[99vw] md:h-[60vh] lg:mt-[10rem]">
+      <div
+        class="flex h-full w-full items-center justify-center rounded-none bg-gradient-to-t from-black to-black/75 p-10 sm:rounded-3xl"
+      >
+        <div
+          class="container flex flex-col items-center justify-items-center gap-y-5 rounded-full sm:gap-y-6"
+        >
+          <h3
+            class="text-center text-2xl font-medium leading-snug tracking-tight text-white sm:text-4xl"
+          >
+            Got a product idea? <br />Let's make it real.
+          </h3>
+          <p
+            class="w-full text-center text-sm font-light leading-snug text-white sm:text-lg md:w-1/2"
+          >
+            I help teams turn complex flows into clear, intuitive interfaces. Available for
+            freelance & short/long-term projects.
+          </p>
+          <button class="w-max rounded-lg bg-white px-10 py-2 md:px-16 md:py-4">
+            <a
+              href="https://www.linkedin.com/in/trung-duc-hua-48993b1a8/"
+              target="_blank"
+              class="text-base font-medium tracking-wider text-[#212121]"
+            >
+              Let's talk
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="mx-auto mb-20 mt-2 w-screen rounded-none border-none border-black/10 bg-white p-3 shadow-[0_-30px_20px_0px_rgba(0,0,0,0.08)] sm:mb-5 sm:w-[99vw] sm:rounded-3xl sm:border sm:p-8 xl:p-32"
+    >
+      <!-- Footer wrapper -->
+      <div
+        class="flex flex-col items-start justify-between gap-y-8 rounded-none border-none border-black/5 bg-white p-6 shadow-[0_25px_100px_-25px_rgba(0,0,0,0.1)] sm:rounded-2xl sm:border sm:p-10"
+      >
+        <!-- Top footer -->
+        <div class="flex flex-col items-start justify-start gap-y-10 md:flex-row">
+          <!-- Left content -->
+          <div class="w-full">
+            <!-- Logo -->
+            <div class="flex w-max items-center justify-center">
+              <a href="index.html" class="text-lg font-bold text-white" style="color: #212121"
+                >Duci.</a
+              >
+            </div>
+            <p
+              class="mt-1 w-full text-justify text-sm font-light leading-relaxed text-black/50 md:w-[80%] md:leading-tight"
+            >
+              is a designer who enjoys turning ideas into real, user-centered products. I handle the
+              full design process—from research and flows to polished UI and developer handoff. I’ve
+              worked on projects in banking, insurance, healthcare, HR, and beyond. Always open to
+              building something that matters.
+            </p>
+          </div>
+          <!-- Right content -->
+          <div
+            class="flex w-auto flex-col items-start justify-normal gap-y-8 sm:w-full sm:flex-row sm:justify-between sm:gap-x-4 sm:gap-y-0 lg:justify-end lg:gap-x-24"
+          >
+            <!-- Projects -->
+            <ul class="flex flex-col items-start gap-y-3">
+              <li class="footer_ul_header">Projects</li>
+              <li>
+                <a href="./apple.html" class="footer_ul_link">Banking app w/Apple</a>
+              </li>
+              <li>
+                <a href="./mbages.html" class="footer_ul_link">Online insurance portal</a>
+              </li>
+              <li>
+                <a href="./taiganow.html" class="footer_ul_link"
+                  >Building materials E-commerce</a
+                >
+              </li>
+              <li><a href="" class="footer_ul_link_2">Medical one stop hub (Updating...)</a></li>
+            </ul>
+            <!-- Contact -->
+            <ul class="flex flex-col items-start gap-y-3">
+              <li class="footer_ul_header">Contact</li>
+              <li><a href="" class="footer_ul_link">LinkedIn</a></li>
+              <li class="text-sm font-light text-black/40">ducihua@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="h-[1px] w-full border border-gray-100"></div>
+
+        <!-- Bottom -->
+        <div class="flex w-full items-center justify-center">
+          <p class="text-sm font-light leading-tight text-black/50">
+            © 2025 Duci. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Main JS -->
+    <script type="module" src="./src/scripts/apple.js"></script>
+  </body>
+</html>

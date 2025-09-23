@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Footer */
+.footer_ul_header {
+  @apply text-base font-medium text-[#212121];
+}
+
+.footer_ul_link {
+  @apply text-sm font-light text-black/40;
+}
+
+.footer_ul_link_2 {
+  @apply cursor-not-allowed text-sm font-light text-black/40;
+}
+
+/* Index page */
+.card {
+  @apply absolute bottom-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform overflow-hidden;
+}
+
+.card > img {
+  @apply absolute w-full rounded-3xl object-cover;
+}
+
+/* MB AGES */
+.section-title-big {
+  @apply whitespace-nowrap text-6xl font-bold tracking-tight text-[#212121];
+}
+
+.section-title-medium {
+  @apply mb-4 text-3xl font-bold tracking-tight text-[#212121];
+}
+
+.section-title-small {
+  @apply mb-2 text-xl font-semibold text-[#212121];
+}
+
+.section-desc {
+  @apply text-xl font-light leading-tight text-black/50;
+}
+
+.section-desc-medium {
+  @apply text-lg font-light leading-tight text-black/50;
+}
+
+.section-desc-small {
+  @apply text-lg font-light leading-tight text-black/50;
+}
+
+/* Taiganow */
+.reveal-item {
+  position: relative;
+  overflow: hidden;
+}
+.mask {
+  position: absolute;
+  inset: 0;
+  background: white;
+}
