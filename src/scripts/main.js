@@ -41,7 +41,6 @@ function triggerCardSwap() {
   const slider = document.querySelector('.slider')
   const cards = Array.from(slider.querySelectorAll('.card'))
   const lastCard = cards.pop()
-  const nextCard = cards[cards.length - 1]
 
   gsap.to(lastCard, {
     y: '+=150%',
@@ -64,7 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
   gsap.set('h1 span', { y: -200 })
   gsap.set('.slider .card:last-child h1 span', { y: 0 })
 
-  document.querySelector('.slider').addEventListener(
+  const slider = document.querySelector('.slider')
+
+  // Scroll bằng chuột
+  slider.addEventListener(
     'wheel',
     (e) => {
       if (e.deltaY > 0) {
@@ -74,4 +76,25 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     { passive: false }
   )
+
+  // Vuốt cảm ứng
+  let touchStartY = 0
+  let touchEndY = 0
+  const SWIPE_THRESHOLD = 50 // px
+
+  slider.addEventListener('touchstart', (e) => {
+    touchStartY = e.changedTouches[0].clientY
+  })
+
+  slider.addEventListener('touchend', (e) => {
+    touchEndY = e.changedTouches[0].clientY
+    const deltaY = touchEndY - touchStartY
+
+    if (deltaY < -SWIPE_THRESHOLD) {
+      // Vuốt lên -> trigger swap
+      triggerCardSwap()
+    }
+    // Vuốt xuống thì không làm gì (giữ logic 1 chiều giống wheel)
+  })
 })
+

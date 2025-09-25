@@ -22,7 +22,7 @@
       >
         <!-- Logo -->
         <div
-          class="hidden sm:flex h-[44px] items-center justify-center rounded-md bg-transparent px-4"
+          class="hidden h-[44px] items-center justify-center rounded-md bg-transparent px-4 sm:flex"
           style="background: #e6e6e6"
         >
           <a href="index.html" class="text-lg font-bold text-white" style="color: #212121">Duci.</a>
@@ -115,7 +115,7 @@
               <div x-data="{ activeTab: 'research' }" class="flex flex-col gap-y-3 md:gap-y-6">
                 <!-- Modal Header -->
                 <div
-                  class="flex items-center justify-between border-b border-slate-200 px-3 md:px-6 py-5 md:p-6"
+                  class="flex items-center justify-between border-b border-slate-200 px-3 py-5 md:p-6 md:px-6"
                 >
                   <h3 class="text-xl font-bold text-black md:text-2xl">What I do</h3>
                   <button @click="openModal = null" class="rounded-full bg-slate-50 p-1 md:p-2">
@@ -147,7 +147,9 @@
                 </div>
                 <!-- Modal Body -->
                 <!-- Tab Switcher -->
-                <div class="sticky flex sm:items-start justify-between sm:justify-start gap-x-0 sm:gap-x-8 px-6">
+                <div
+                  class="sticky flex justify-between gap-x-0 px-6 sm:items-start sm:justify-start sm:gap-x-8"
+                >
                   <button
                     @click="activeTab = 'research'"
                     :class="activeTab === 'research' ? 'text-sm text-slate-900 font-normal md:font-semibold py-2 border-b-2 border-slate-900 ' : 'text-sm text-slate-500 font-normal hover:text-slate-900 py-2 border-b-2 border-transparent'"
@@ -200,32 +202,32 @@
                       <p class="text-xs italic text-slate-500 sm:text-sm">Tools:</p>
                       <div class="flex flex-wrap gap-2">
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           User interviews
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           Stakeholder workshops
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           Competitor analysis
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           Market research
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           Survey
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           Journey mapping
                         </button>
@@ -286,32 +288,32 @@
                       <p class="text-xs italic text-slate-500 sm:text-sm">Tools:</p>
                       <div class="flex flex-wrap gap-2">
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           User flows
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           Wireframes
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           Sitemaps
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           Low -> high-fidelity mockups
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           Interaction design
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           Usability heuristics
                         </button>
@@ -372,37 +374,37 @@
                       <p class="text-xs italic text-slate-500 sm:text-sm">Tools:</p>
                       <div class="flex flex-wrap gap-2">
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           Moodboard
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           Design system
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           HTML/CSS
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           TailwindCSS
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           AlpineJS/VanillaJS
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           GSAP
                         </button>
                         <button
-                          class="cursor-text rounded-md border border-slate-200 px-2 text-xs font-normal text-slate-900 sm:px-4 py-2 sm:text-sm"
+                          class="cursor-text rounded-md border border-slate-200 px-2 py-2 text-xs font-normal text-slate-900 sm:px-4 sm:text-sm"
                         >
                           Handoff document
                         </button>
@@ -443,7 +445,7 @@
               <div x-data="{ openItem: 0 }" class="flex flex-col gap-y-3 md:gap-y-6">
                 <!-- Modal Header -->
                 <div
-                  class="border-slate-20 flex items-center justify-between border-b px-3 md:px-6 py-5 md:p-6"
+                  class="border-slate-20 flex items-center justify-between border-b px-3 py-5 md:p-6 md:px-6"
                 >
                   <h3 class="text-xl font-bold text-black md:text-2xl">Résumé</h3>
                   <button @click="openModal = null" class="rounded-full bg-slate-50 p-1 md:p-2">
@@ -515,18 +517,22 @@
                       <!-- Content -->
                       <div x-show="openItem === index">
                         <p
-                          class="mt-4 rounded-md bg-slate-50 p-3 md:p-4 text-[13px] sm:text-sm font-light text-slate-600 ring-2 ring-slate-100"
+                          class="mt-4 rounded-md bg-slate-50 p-3 text-[13px] font-light text-slate-600 ring-2 ring-slate-100 sm:text-sm md:p-4"
                           x-text="job.desc"
                         ></p>
 
-                        <div class="mt-4 flex flex-col gap-y-3 sm:flex-row items-start sm:items-center gap-x-2">
-                          <p class="text-xs md:text-sm font-medium text-slate-900">Feature projects:</p>
+                        <div
+                          class="mt-4 flex flex-col items-start gap-x-2 gap-y-3 sm:flex-row sm:items-center"
+                        >
+                          <p class="text-xs font-medium text-slate-900 md:text-sm">
+                            Feature projects:
+                          </p>
                           <div class="flex flex-wrap items-center gap-2">
                             <template x-for="client in job.clients" :key="client.name">
                               <a
                                 :href="client.link"
                                 target="_blank"
-                                class="rounded-full bg-gray-300/20 px-2 sm:px-3 py-1 text-xs sm:text-sm font-light text-slate-900"
+                                class="rounded-full bg-gray-300/20 px-2 py-1 text-xs font-light text-slate-900 sm:px-3 sm:text-sm"
                                 x-text="client.name"
                               ></a>
                             </template>
@@ -547,7 +553,7 @@
               >
                 <!-- Modal Header -->
                 <div
-                  class="flex items-center justify-between border-b border-slate-200 px-3 md:px-6 py-5 md:p-6"
+                  class="flex items-center justify-between border-b border-slate-200 px-3 py-5 md:p-6 md:px-6"
                 >
                   <h3 class="text-xl font-bold text-black md:text-2xl">About me</h3>
                   <button @click="openModal = null" class="rounded-full bg-slate-50 p-1 md:p-2">
@@ -583,7 +589,7 @@
                 >
                   <!-- Self Introduction -->
                   <div
-                    class="flex flex-col h-auto items-start justify-normal md:justify-between gap-y-5 overflow-hidden rounded-lg bg-slate-200/50 p-4 md:p-8 md:col-span-2 md:gap-y-0"
+                    class="flex h-auto flex-col items-start justify-normal gap-y-5 overflow-hidden rounded-lg bg-slate-200/50 p-4 md:col-span-2 md:justify-between md:gap-y-0 md:p-8"
                   >
                     <div>
                       <p class="text-base font-medium text-slate-900">Duci Hua</p>
@@ -627,7 +633,7 @@
 
                   <!-- Contact -->
                   <div
-                    class="col-span-1 flex flex-col gap-y-4 sm:gap-y-8 md:gap-y-0 justify-between overflow-hidden rounded-lg bg-slate-200/50 p-4 md:p-8"
+                    class="col-span-1 flex flex-col justify-between gap-y-4 overflow-hidden rounded-lg bg-slate-200/50 p-4 sm:gap-y-8 md:gap-y-0 md:p-8"
                   >
                     <p class="text-left text-sm font-light text-slate-900">Contact</p>
                     <div class="flex w-full items-center justify-start gap-x-2 md:justify-end">
@@ -636,21 +642,126 @@
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <img src="/icons/linkedin.svg" alt="LinkedIn" />
+                        <?xml version="1.0" encoding="UTF-8"?><svg
+                          width="24px"
+                          height="24px"
+                          stroke-width="1.5"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          color="#000000"
+                        >
+                          <path
+                            d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
+                            stroke="#000000"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M7 17V13.5V10"
+                            stroke="#000000"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M11 17V13.75M11 10V13.75M11 13.75C11 10 17 10 17 13.75V17"
+                            stroke="#000000"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M7 7.01L7.01 6.99889"
+                            stroke="#000000"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <!-- <img src="/icons/linkedin.svg" alt="LinkedIn" /> -->
                       </a>
                       <a
                         href="https://www.instagram.com/ducihua.foto/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <img src="/icons/instagram.svg" alt="Instagram" />
+                        <?xml version="1.0" encoding="UTF-8"?><svg
+                          width="24px"
+                          height="24px"
+                          stroke-width="1.5"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          color="#000000"
+                        >
+                          <path
+                            d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                            stroke="#000000"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                            stroke="#000000"
+                            stroke-width="1.5"
+                          ></path>
+                          <path
+                            d="M17.5 6.51L17.51 6.49889"
+                            stroke="#000000"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <!-- <img src="/icons/instagram.svg" alt="Instagram" /> -->
                       </a>
                       <a
                         href="https://dribbble.com/ducihua"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <img src="/icons/dribbble.svg" alt="Dribbble" />
+                        <?xml version="1.0" encoding="UTF-8"?><svg
+                          width="24px"
+                          height="24px"
+                          stroke-width="1.5"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          color="#000000"
+                        >
+                          <path
+                            d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12Z"
+                            stroke="#000000"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M16.6726 20.8435C15.5 14 12.5 8.00003 8.5 2.62964"
+                            stroke="#000000"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M2.06653 10.8406C6.00004 11 15.2829 10.5 19.1415 5"
+                            stroke="#000000"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M21.9677 12.81C15.3438 10.8407 7.50002 14.0001 5.23145 19.3613"
+                            stroke="#000000"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <!-- <img src="/icons/dribbble.svg" alt="Dribbble" /> -->
                       </a>
                     </div>
                   </div>
@@ -681,7 +792,7 @@
         Meet: <b>Duci</b> <span>/'duk-key/</span>
       </p>
       <h1
-        class="bg-gradient-to-b from-black via-black/80 to-black/65 bg-clip-text text-center text-5xl sm:text-6xl font-extrabold uppercase tracking-tight text-transparent md:text-7xl md:font-bold"
+        class="bg-gradient-to-b from-black via-black/80 to-black/65 bg-clip-text text-center text-5xl font-extrabold uppercase tracking-tight text-transparent sm:text-6xl md:text-7xl md:font-bold"
       >
         designer / researcher
       </h1>

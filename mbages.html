@@ -58,35 +58,59 @@
     </header>
 
     <!-- Hero section -->
-    <section class="mx-auto flex h-screen w-screen items-center justify-center p-3">
-      <div
-        class="pointer-events-none relative inset-0 h-full w-full overflow-hidden rounded-3xl bg-gradient-to-b from-white to-[#eff1f8] shadow-[0_20px_80px_25px_rgba(0,0,0,0.1)]"
-      >
+    <section class="mx-auto flex items-center justify-center p-3 lg:h-screen lg:w-screen">
+      <div class="flex h-full w-full flex-col gap-y-10 justify-center lg:flex-row lg:justify-between">
+        <!-- Title -->
         <div
-          class="container flex h-full flex-col items-center justify-center px-0 sm:px-10 lg:flex-row"
+          class="flex h-full w-full flex-col items-start justify-between gap-y-5 rounded-bl-3xl rounded-tl-3xl px-10 sm:py-10 lg:py-20"
         >
-          <!-- Hero title -->
-          <div class="flex w-full flex-col items-center gap-y-2 lg:w-[60%] lg:items-start">
-            <div
-              class="mb-2 w-max rounded-full bg-blue-600 px-4 py-1 text-sm font-medium text-white"
-            >
-              Banking insurance app
+          <!-- Top -->
+          <div class="flex w-full flex-col items-center gap-y-8 lg:items-start">
+            <div class="flex w-fit flex-row gap-x-2 rounded-2xl border border-gray-200 px-4 py-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="size-4 text-black"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm font-medium text-[#212121]">Banking insurance app</p>
             </div>
             <h1
-              class="section-heading-animated-hero mb-2 text-center text-4xl font-semibold leading-tight tracking-tight lg:text-left lg:text-6xl"
+              class="section-heading-animated-hero text-center tracking-tight text-4xl sm:text-5xl md:text-7xl lg:text-left lg:text-6xl lg:font-medium xl:text-7xl xl:font-semibold"
               style="clip-path: inset(100% 0 0 0); opacity: 0"
             >
-              Insurance App <br />
-              for Banking Users
+              Banking Insurance <br />
+              Made Fully Digital
             </h1>
+            <div class="flex flex-row flex-wrap justify-center items-center gap-4">
+              <div class="rounded-3xl bg-gray-100 px-4 py-1 sm:py-2 xl:px-5 xl:py-3">
+                <p class="font-light text-black text-sm xl:text-base">UX Research</p>
+              </div>
+              <div class="rounded-3xl bg-gray-100 px-4 py-1 sm:py-2 xl:px-5 xl:py-3">
+                <p class="font-light text-black text-sm xl:text-base">UI Design</p>
+              </div>
+              <div class="rounded-3xl bg-gray-100 px-4 py-1 sm:py-2 xl:px-5 xl:py-3">
+                <p class="font-light text-black text-sm xl:text-base">Business analysis</p>
+              </div>
+            </div>
+          </div>
+          <!-- Bottom -->
+          <div class="flex flex-col items-center gap-y-10 lg:items-start">
             <p
-              class="section-heading-animated-hero mb-6 w-3/4 text-center text-base font-light leading-snug text-slate-500 sm:text-lg lg:text-left lg:text-xl"
+              class="section-heading-animated-hero text-center text-sm sm:text-base font-light text-slate-500 w-full md:w-2/3 lg:w-3/4 lg:text-left"
               style="clip-path: inset(100% 0 0 0); opacity: 0"
             >
-              Led the UX/UI for a mobile portal enabling users to manage policies, track funds, and
-              submit claims with ease.
+              Led the UX/UI for a comprehensive mobile insurance portal, enabling banking users to
+              seamlessly purchase and manage policies, track investment-linked funds, and submit
+              claims digitally.
             </p>
-            <div class="flex hidden animate-float-y items-center gap-x-2 lg:flex">
+            <div class="flex animate-float-y items-center gap-x-2">
               <p class="text-base font-light text-slate-500">Scroll down</p>
               <span>
                 <svg
@@ -104,31 +128,26 @@
               </span>
             </div>
           </div>
-          <!-- Hero image -->
-          <img
-            src="/img/mbbank-ages/hero-image.png"
-            alt=""
-            class="section-heading-animated-2 w-[90%] rounded-3xl object-cover md:w-[70%] lg:w-[55%]"
-            style="clip-path: inset(100% 0 0 0); opacity: 0"
-          />
+        </div>
 
-          <div class="mt-12 block flex animate-float-y items-center gap-x-2 lg:hidden">
-            <p class="text-base font-light text-slate-500">Scroll down</p>
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="size-5 text-slate-500"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M9.47 15.28a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 1 0-1.06-1.06L10 13.69 6.28 9.97a.75.75 0 0 0-1.06 1.06l4.25 4.25ZM5.22 6.03l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L10 8.69 6.28 4.97a.75.75 0 0 0-1.06 1.06Z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </span>
-          </div>
+        <!-- Wallpaper -->
+        <div
+          class="relative flex h-full w-full flex-col items-center justify-center rounded-3xl gap-y-10 bg-[url('/img/mbbank-ages/hero-wallpaper.jpg')] bg-cover bg-center p-8 md:p-16 lg:p-0"
+        >
+          <!-- overlay -->
+          <div class="absolute inset-0 bg-white/10 backdrop-blur-lg rounded-3xl"></div>
+
+          <!-- content -->
+          <img
+            src="/img/mbbank-ages/hero-image-1.png"
+            alt=""
+            class="relative z-10 rounded-xl bg-white/60 object-cover p-10 backdrop-blur-lg w-[90%] sm:w-1/2 lg:w-2/3 xl:w-[60%]"
+          />
+          <img
+            src="/img/mbbank-ages/hero-image-2.png"
+            alt=""
+            class="relative z-10 hidden rounded-xl bg-white/60 object-cover p-6 backdrop-blur-lg sm:w-1/2 lg:block lg:w-2/3 xl:w-[60%]"
+          />
         </div>
       </div>
     </section>
@@ -143,18 +162,20 @@
         </h2>
         <div class="flex flex-row items-start justify-between gap-x-10">
           <p
-            class="fade-vertical-section w-[70%] text-sm sm:text-base font-light text-black/50 md:w-[50%] lg:w-[30%]"
+            class="fade-vertical-section w-[70%] text-sm font-light text-black/50 sm:text-base md:w-[50%] lg:w-[30%]"
           >
             Make expenses a breeze for employees and managers with automated receipts, an AI-powered
             expense assistant, in-app travel bookings and itinerary changes. All in a five-star
             mobile app.
           </p>
           <ul class="fade-vertical-section flex flex-col gap-y-1">
-            <li class="text-sm sm:text-base font-light text-black/50">Business analysis</li>
-            <li class="text-sm sm:text-base font-light text-black/50">UX designer</li>
-            <li class="text-sm sm:text-base font-light text-black/50">UI designer</li>
+            <li class="text-sm font-light text-black/50 sm:text-base">Business analysis</li>
+            <li class="text-sm font-light text-black/50 sm:text-base">UX designer</li>
+            <li class="text-sm font-light text-black/50 sm:text-base">UI designer</li>
           </ul>
-          <p class="fade-vertical-section hidden text-sm sm:text-base font-light text-black/50 md:block">
+          <p
+            class="fade-vertical-section hidden text-sm font-light text-black/50 sm:text-base md:block"
+          >
             2020 - 2022
           </p>
         </div>
@@ -198,7 +219,7 @@
             </div>
             <!-- Card image -->
             <img
-              src="/img/mbbank-ages/main-features-1.png"
+              src="/img/mbbank-ages/main-features-1.jpg"
               alt=""
               class="w-1/2 object-cover pt-[2rem] md:w-[40%] lg:w-[28%] lg:pt-[20rem]"
             />
@@ -699,7 +720,7 @@
     >
       <img
         id="conclusion-hero-img"
-        src="/img/mbbank-ages/wallpaper-1.png"
+        src="/img/mbbank-ages/wallpaper-1.jpg"
         alt=""
         class="absolute left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 rounded-3xl object-cover"
       />
@@ -785,7 +806,14 @@
             <!-- Contact -->
             <ul class="flex flex-col items-start gap-y-3">
               <li class="footer_ul_header">Contact</li>
-              <li><a href="" class="footer_ul_link">LinkedIn</a></li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/trung-duc-hua-48993b1a8/"
+                  target="_blank"
+                  class="footer_ul_link"
+                  >LinkedIn</a
+                >
+              </li>
               <li class="text-sm font-light text-black/40">ducihua@gmail.com</li>
             </ul>
           </div>
