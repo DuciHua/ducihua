@@ -9,6 +9,7 @@ export default defineConfig({
         apple: 'apple.html',
         mbages: 'mbages.html',
         taiganow: 'taiganow.html',
+        pom: 'devyt.html',
       },
     },
   },

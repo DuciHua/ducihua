@@ -49,6 +49,7 @@
   @apply text-lg font-light leading-tight text-black/50;
 }
 
+
 /* Taiganow */
 .reveal-item {
   position: relative;
@@ -58,4 +59,11 @@
   position: absolute;
   inset: 0;
   background: white;
+}
+
+
+/* Devyt */
+.hero-chart-polygon, .hero-chart-shape {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
 }

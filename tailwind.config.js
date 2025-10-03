@@ -4,6 +4,7 @@ module.exports = {
     './apple.html',
     './mbages.html',
     './taiganow.html',
+    './devyt.html',
     './src/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
